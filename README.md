@@ -4,7 +4,10 @@ Reads a dwml (Digital Weather Markup Language) file and prints the weather to th
 
 ## usage
 
-java -jar dwml-1.0-SNAPSHOT-jar-with-dependencies.jar
+git clone https://github.com/geocolumbus/worthington-weather.git weather
+cd weather
+mvn clean package
+java -jar target/dwml-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 ## output
 
