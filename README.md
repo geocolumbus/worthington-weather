@@ -10,10 +10,12 @@ Reads a dwml (Digital Weather Markup Language) file and prints the weather to th
 
 ## usage
 
+<pre>
 git clone https://github.com/geocolumbus/worthington-weather.git weather
 cd weather
 mvn clean package
 java -jar target/dwml-1.0-SNAPSHOT-jar-with-dependencies.jar
+</pre>
 
 ## output
 
@@ -44,8 +46,6 @@ quarter of an inch possible.
 ## customize
 
 Change the url in Main to point to your coordinates.
-
-ie, http://forecast.weather.gov/MapClick.php?lat=40.1008&lon=-83.0271&unit=0&lg=english&FcstType=dwml
 
 1. Go to http://forecast.weather.gov/
 1. Type in your zip code
