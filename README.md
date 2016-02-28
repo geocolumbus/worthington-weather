@@ -34,4 +34,8 @@ quarter of an inch possible.
 
 ## customize
 
-Change the url in Main to point to your
+Change the url in Main to point to your coordinates.
+
+ie, http://forecast.weather.gov/MapClick.php?lat=40.1008&lon=-83.0271&unit=0&lg=english&FcstType=dwml
+
+
