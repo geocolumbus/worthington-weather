@@ -51,7 +51,7 @@ Change the url in Main to point to your coordinates.
 1. Type in your zip code
 1. Look along the right and scroll down for the "xml" button and press it.
 1. You'll get back a "dwml" file. Copy the URL and paste it into src/main/java/com/tallgeorge/dwml/Main.java.
-1. mvn clean package (I run Java 8).
-1. get the jar file from the target folder. See usage above.
+1. mvn clean package.
+1. java -jar target/dwml-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 
