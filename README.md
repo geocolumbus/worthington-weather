@@ -2,6 +2,12 @@
 
 Reads a dwml (Digital Weather Markup Language) file and prints the weather to the command line.
 
+## requirements
+
+* Java 7 or greater.
+* Maven 3 or greater.
+* git 2.5 or greater.
+
 ## usage
 
 git clone https://github.com/geocolumbus/worthington-weather.git weather
