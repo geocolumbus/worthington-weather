@@ -1,0 +1,258 @@
+<dwml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
+      xsi:noNamespaceSchemaLocation="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
+    <head>
+        <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
+            <creation-date refresh-frequency="PT1H">2016-02-27T11:57:59-05:00</creation-date>
+            <category>current observations and forecast</category>
+        </product>
+        <source>
+            <production-center>Wilmington, OH</production-center>
+            <credit>http://www.weather.gov/iln/</credit>
+            <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+        </source>
+    </head>
+    <data type="forecast">
+        <location>
+            <location-key>point1</location-key>
+            <description>Riverlea, OH</description>
+            <point latitude="40.09" longitude="-83.04"/>
+            <city state="OH">Riverlea</city>
+            <height datum="mean sea level">801</height>
+        </location>
+        <moreWeatherInformation applicable-location="point1">
+            http://forecast.weather.gov/MapClick.php?lat=40.09&amp;lon=-83.04
+        </moreWeatherInformation>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p12h-n13-1</layout-key>
+            <start-valid-time period-name="This Afternoon">2016-02-27T13:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tonight">2016-02-27T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Sunday">2016-02-28T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Sunday Night">2016-02-28T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Monday">2016-02-29T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Monday Night">2016-02-29T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tuesday">2016-03-01T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tuesday Night">2016-03-01T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Wednesday">2016-03-02T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Wednesday Night">2016-03-02T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Thursday">2016-03-03T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Thursday Night">2016-03-03T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Friday">2016-03-04T06:00:00-05:00</start-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p24h-n7-1</layout-key>
+            <start-valid-time period-name="This Afternoon">2016-02-27T13:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Sunday">2016-02-28T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Monday">2016-02-29T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tuesday">2016-03-01T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Wednesday">2016-03-02T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Thursday">2016-03-03T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Friday">2016-03-04T06:00:00-05:00</start-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p24h-n6-2</layout-key>
+            <start-valid-time period-name="Tonight">2016-02-27T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Sunday Night">2016-02-28T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Monday Night">2016-02-29T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tuesday Night">2016-03-01T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Wednesday Night">2016-03-02T18:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Thursday Night">2016-03-03T18:00:00-05:00</start-valid-time>
+        </time-layout>
+        <parameters applicable-location="point1">
+            <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+                <name>Daily Maximum Temperature</name>
+                <value>45</value>
+                <value>61</value>
+                <value>48</value>
+                <value>59</value>
+                <value>36</value>
+                <value>39</value>
+                <value>38</value>
+            </temperature>
+            <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+                <name>Daily Minimum Temperature</name>
+                <value>35</value>
+                <value>37</value>
+                <value>36</value>
+                <value>29</value>
+                <value>21</value>
+                <value>25</value>
+            </temperature>
+            <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n13-1">
+                <name>12 Hourly Probability of Precipitation</name>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value>60</value>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value>60</value>
+                <value>80</value>
+                <value>30</value>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value>30</value>
+                <value xsi:nil="true"/>
+            </probability-of-precipitation>
+            <weather time-layout="k-p12h-n13-1">
+                <name>Weather Type, Coverage, Intensity</name>
+                <weather-conditions weather-summary="Sunny"/>
+                <weather-conditions weather-summary="Mostly Clear"/>
+                <weather-conditions weather-summary="Sunny and Windy"/>
+                <weather-conditions weather-summary="Showers Likely and Breezy"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Mostly Cloudy"/>
+                <weather-conditions weather-summary="Mostly Cloudy then Rain Likely"/>
+                <weather-conditions weather-summary="Rain then Rain/Snow Likely and Breezy"/>
+                <weather-conditions weather-summary="Chance Snow Showers then Mostly Cloudy"/>
+                <weather-conditions weather-summary="Mostly Cloudy"/>
+                <weather-conditions weather-summary="Partly Sunny"/>
+                <weather-conditions weather-summary="Chance Snow"/>
+                <weather-conditions weather-summary="Mostly Cloudy"/>
+            </weather>
+            <conditions-icon type="forecast-NWS" time-layout="k-p12h-n13-1">
+                <name>Conditions Icon</name>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/few.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/nfew.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/wind_few.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/nshra60.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/sct.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/nbkn.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/DualImage.php?i=bkn&amp;j=ra&amp;jp=60
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/DualImage.php?i=nra&amp;j=nra_sn&amp;ip=80&amp;jp=60
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/DualImage.php?i=sn&amp;j=bkn&amp;ip=30
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/nbkn.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/bkn.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/nsn30.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/bkn.png
+                </icon-link>
+            </conditions-icon>
+            <hazards time-layout="">
+                <name>Watches, Warnings, and Advisories</name>
+                <hazard-conditions>
+                    <hazard headline="Hazardous Weather Outlook">
+                        <hazardTextURL>
+                            http://forecast.weather.gov/showsigwx.php?warnzone=OHZ055&amp;warncounty=OHC049&amp;
+                            firewxzone=OHZ055&amp;local_place1=Riverlea+OH&amp;product1=Hazardous+Weather+Outlook
+                        </hazardTextURL>
+                    </hazard>
+                </hazard-conditions>
+            </hazards>
+            <wordedForecast time-layout="k-p12h-n13-1" dataSource="ilnNetcdf" wordGenerator="markMitchell">
+                <name>Text Forecast</name>
+                <text>
+                    Sunny, with a high near 45. Southwest wind around 15 mph, with gusts as high as 26 mph.
+                </text>
+                <text>
+                    Mostly clear, with a low around 35. Southwest wind around 9 mph.
+                </text>
+                <text>
+                    Sunny, with a high near 61. Windy, with a southwest wind 9 to 14 mph increasing to 21 to 26 mph in
+                    the afternoon. Winds could gust as high as 47 mph.
+                </text>
+                <text>
+                    Showers likely, mainly before 2am. Increasing clouds, with a low around 37. Breezy, with a southwest
+                    wind 13 to 23 mph becoming northwest after midnight. Winds could gust as high as 37 mph. Chance of
+                    precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible.
+                </text>
+                <text>
+                    Mostly sunny, with a high near 48. Northwest wind around 9 mph becoming southwest in the afternoon.
+                </text>
+                <text>Mostly cloudy, with a low around 36.</text>
+                <text>
+                    Rain likely, mainly after 5pm. Mostly cloudy, with a high near 59. Chance of precipitation is 60%.
+                </text>
+                <text>
+                    Rain before midnight, then rain and snow showers likely between midnight and 1am, then snow showers
+                    likely after 1am. Low around 29. Breezy. Chance of precipitation is 80%.
+                </text>
+                <text>
+                    A chance of snow showers before 10am. Mostly cloudy, with a high near 36. Chance of precipitation is
+                    30%.
+                </text>
+                <text>Mostly cloudy, with a low around 21.</text>
+                <text>Partly sunny, with a high near 39.</text>
+                <text>
+                    A chance of snow. Cloudy, with a low around 25. Chance of precipitation is 30%.
+                </text>
+                <text>Mostly cloudy, with a high near 38.</text>
+            </wordedForecast>
+        </parameters>
+    </data>
+    <data type="current observations">
+        <location>
+            <location-key>point1</location-key>
+            <point latitude="40.08" longitude="-83.08"/>
+            <area-description>Columbus, Ohio State University Airport, OH</area-description>
+            <height datum="mean sea level" height-units="feet">902</height>
+        </location>
+        <moreWeatherInformation applicable-location="point1">http://www.nws.noaa.gov/data/obhistory/KOSU.html
+        </moreWeatherInformation>
+        <time-layout time-coordinate="local">
+            <layout-key>k-p1h-n1-1</layout-key>
+            <start-valid-time period-name="current">2016-02-27T12:53:00-05:00</start-valid-time>
+        </time-layout>
+        <parameters applicable-location="point1">
+            <temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">
+                <value>42</value>
+            </temperature>
+            <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">
+                <value>27</value>
+            </temperature>
+            <humidity type="relative" time-layout="k-p1h-n1-1">
+                <value>55</value>
+            </humidity>
+            <weather time-layout="k-p1h-n1-1">
+                <name>Weather Type, Coverage, Intensity</name>
+                <weather-conditions weather-summary="Fair"/>
+                <weather-conditions>
+                    <value>
+                        <visibility units="statute miles">10.00</visibility>
+                    </value>
+                </weather-conditions>
+            </weather>
+            <conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">
+                <name>Conditions Icon</name>
+                <icon-link>
+                    http://forecast.weather.gov/newimages/medium/sct.png
+                </icon-link>
+            </conditions-icon>
+            <direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">
+                <value>210</value>
+            </direction>
+            <wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">
+                <value>NA</value>
+            </wind-speed>
+            <wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">
+                <value>11</value>
+            </wind-speed>
+            <pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">
+                <value>30.08</value>
+            </pressure>
+        </parameters>
+    </data>
+</dwml>
