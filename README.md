@@ -54,4 +54,8 @@ Change the url in Main to point to your coordinates.
 1. mvn clean package.
 1. java -jar target/dwml-1.0-SNAPSHOT-jar-with-dependencies.jar
 
+## improve
+
+Don't get me started. How about printing out the city name? Make zip code a command line option? You could make a career out of this thing.
+
 
