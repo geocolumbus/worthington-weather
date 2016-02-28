@@ -38,11 +38,11 @@ Change the url in Main to point to your coordinates.
 
 ie, http://forecast.weather.gov/MapClick.php?lat=40.1008&lon=-83.0271&unit=0&lg=english&FcstType=dwml
 
-#Go to http://forecast.weather.gov/
-#Type in your zip code
-#Look along the right and scroll down for the "xml" button and press it.
-#You'll get back a "dwml" file. Copy the URL and paste it into the Main file.
-#mvn clean package
-#get the jar file from the target folder. See usage above.
+1.Go to http://forecast.weather.gov/
+1.Type in your zip code
+1.Look along the right and scroll down for the "xml" button and press it.
+1.You'll get back a "dwml" file. Copy the URL and paste it into the Main file.
+1.mvn clean package
+1.get the jar file from the target folder. See usage above.
 
 
