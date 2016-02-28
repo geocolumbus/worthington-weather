@@ -41,7 +41,7 @@ ie, http://forecast.weather.gov/MapClick.php?lat=40.1008&lon=-83.0271&unit=0&lg=
 1. Go to http://forecast.weather.gov/
 1. Type in your zip code
 1. Look along the right and scroll down for the "xml" button and press it.
-1. You'll get back a "dwml" file. Copy the URL and paste it into the Main file.
+1. You'll get back a "dwml" file. Copy the URL and paste it into src/main/java/com/tallgeorge/dwml/Main.java.
 1. mvn clean package (I run Java 8).
 1. get the jar file from the target folder. See usage above.
 
