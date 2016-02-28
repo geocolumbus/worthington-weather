@@ -6,7 +6,9 @@ import com.tallgeorge.dwml.schema.TimeLayoutElementType;
 import org.apache.commons.lang.WordUtils;
 
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
@@ -14,7 +16,7 @@ import java.net.URL;
  */
 public class Weather {
 
-    private Dwml dwml = null;
+    private Dwml dwml;
 
     /**
      * No arg constructor for test.
@@ -24,14 +26,16 @@ public class Weather {
 
     /**
      * Get and parse the weather url, a dwml formatted file at the url provided.
+     *
      * @param url, the endpoint of the dwml file.
      */
     public Weather(String url) {
         if (url != null && !url.equals("")) {
             try {
                 this.dwml = getDwml(url);
-            } catch (Exception e) {
-                System.out.println(e.getMessage() + "\n" + e.getStackTrace());
+            } catch (JAXBException | MalformedURLException e) {
+                this.dwml = new Dwml();
+                System.out.println(e);
             }
         } else {
             System.out.println("Invalid URL.");
@@ -40,11 +44,12 @@ public class Weather {
 
     /**
      * Load and parse the dwml file.
+     *
      * @param url, the endpoint of the dwml file.
      * @return a Dwml object that contains the JaxB parsed dwml.
      * @throws Exception
      */
-    private Dwml getDwml(String url) throws Exception {
+    private Dwml getDwml(String url) throws JAXBException, MalformedURLException {
         JAXBContext jaxbContext = JAXBContext.newInstance(Dwml.class);
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
         return (Dwml) jaxbUnmarshaller.unmarshal(new URL(url));
@@ -52,6 +57,7 @@ public class Weather {
 
     /**
      * The dwml to string formatter.
+     *
      * @param dwml The parsed dwml file.
      * @return a String, the formatted output from the dwml file.
      */
