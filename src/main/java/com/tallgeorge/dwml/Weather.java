@@ -65,8 +65,7 @@ public class Weather {
         if (dwml == null) {
             return "Weather unavailable";
         }
-
-        String formattedWeather = "--------------------------------------------------------------------------------";
+        String formattedWeather = "";
         for (TimeLayoutElementType timeLayoutElementType : dwml.getData().get(0).getTimeLayout()) {
             if (timeLayoutElementType.getLayoutKey().contains("k-p12h")) {
                 int counter = 0;
@@ -75,14 +74,15 @@ public class Weather {
                     String date = startValidTimeType.getPeriodName();
                     String forecast = dwml.getData().get(0).getParameters().get(0).getWordedForecast().getText().get(counter++);
                     forecast = forecast.replaceAll("\n", " ").replaceAll("( )+", " ").trim();
-                    formattedWeather += "\n" + WordUtils.wrap(String.format("%s - %s", date.toUpperCase(), forecast), 80) + "\n";
+                    String weatherLine = ColorText.GREEN.getColor() + date.toUpperCase()
+                            + ColorText.RESET.getColor() + " " + forecast;
+                    formattedWeather += "\n" + WordUtils.wrap(weatherLine, 80) + "\n";
                     if (counter == 6) {
                         break;
                     }
                 }
             }
         }
-        formattedWeather += "--------------------------------------------------------------------------------\n";
         return formattedWeather;
     }
 
