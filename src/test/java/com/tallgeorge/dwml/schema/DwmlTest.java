@@ -25,7 +25,7 @@ public class DwmlTest {
 
     @Test
     public void testDWML() throws Exception {
-        assertEquals("2016-02-27T11:57:59-05:00", dwml.getHead().getProduct().getCreationDate().getValue().toString());
+        assertEquals("2018-05-05T15:17:31-04:00", dwml.getHead().getProduct().getCreationDate().getValue().toString());
         assertEquals("Riverlea", dwml.data.get(0).getLocation().get(0).getCity().getValue());
     }
 }

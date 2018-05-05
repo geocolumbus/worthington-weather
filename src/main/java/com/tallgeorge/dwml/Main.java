@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         // forecast for 43085
-        String url = "http://forecast.weather.gov/MapClick.php?lat=40.1008&lon=-83.0271&unit=0&lg=english&FcstType=dwml";
+        String url = "https://forecast.weather.gov/MapClick.php?lat=40.1008&lon=-83.0271&unit=0&lg=english&FcstType=dwml";
         weather = new Weather(url);
         System.out.println(weather.toString());
     }
